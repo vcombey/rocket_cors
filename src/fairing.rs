@@ -115,7 +115,7 @@ impl rocket::fairing::Fairing for Cors {
         ))
     }
 
-    async fn on_request(&self, request: &mut Request<'_>, _: &rocket::Data) {
+    async fn on_request(&self, request: &mut Request<'_>, _: &mut rocket::Data) {
         let result = match validate(self, request) {
             Ok(_) => CorsValidation::Success,
             Err(err) => {
