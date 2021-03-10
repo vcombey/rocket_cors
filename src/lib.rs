@@ -261,7 +261,6 @@ See the [example](https://github.com/lawliet89/rocket_cors/blob/master/examples/
     missing_debug_implementations,
     unknown_lints,
     unsafe_code,
-    broken_intra_doc_links
 )]
 #![doc(test(attr(allow(unused_variables), deny(warnings))))]
 
